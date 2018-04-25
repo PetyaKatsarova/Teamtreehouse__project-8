@@ -62,26 +62,6 @@ footer {
 }
 
                       /**********************   NAV STYLING *********************************/
-nav ul{
-    display: flex;
-    margin-top: 2%;
-  }
-
-#Layer_1{
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-a:hover #Layer_1{
-    fill: orange;
-}
-
-
-
-
-
 
 
 
