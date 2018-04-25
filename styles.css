@@ -68,13 +68,56 @@ footer {
 
 
 
+                    /**********************   LOGO STYLING *********************************/
+.logo{
+    width: 140px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+svg .st1{
+    display: none;
+}
+.logo-text{
+    color:#eaaa7f;
+}
+    /*********    animation       *******/
+@keyframes grow{
+    0%{
+        transform: scale(0);
+    }
+    30%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(.8);
+    }
+}
+#Layer_1{
+    animation: grow 1s ease-out backwards;
+}
+
+                   /**********************   DOG IMAGES *********************************/
+.dog-orange{
+    fill: coral;
+}
 
 
 
 
 
 
+                  /**********************   MEDIA QUERIES *********************************/
 
+@media only screen and (min-width: 425px){
+    .logo-text{
+        display: none;
+    }
+    svg .st1{
+    display: inline-block;
+}
+
+}
 
 
 
