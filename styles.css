@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url("svgs/background.svg");
 }
 
 #container {
@@ -64,10 +65,6 @@ footer {
                       /**********************   NAV STYLING *********************************/
 
 
-
-
-
-
                     /**********************   LOGO STYLING *********************************/
 .logo{
     width: 140px;
@@ -98,8 +95,29 @@ svg .st1{
 }
 
                    /**********************   DOG IMAGES *********************************/
-.dog-orange{
-    fill: coral;
+.dogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sable, .fawn, .red, .stone{
+    padding: 10px;
+}
+.sable{
+    color: #b97f5b;
+    fill:  #b97f5b;
+}
+.fawn{
+    color: #e9aa82;
+    fill: #e9aa82;
+}
+.red{
+    color: #834b29;
+    fill: #834b29;
+}
+.stone{
+    color: #52595f;
+    fill:  #52595f;
 }
 
 
