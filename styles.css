@@ -63,11 +63,26 @@ footer {
 }
 
                       /**********************   NAV STYLING *********************************/
+
 .home svg, .location svg, .contact svg{
     width: 15px;
     height: 15px;
 }
-
+                    /*   NAV ANIMATION    */
+@keyframes rotate{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100{
+        transform: scale(1);
+    }
+}
+nav li:hover svg{
+    animation: rotate .6s ease-out forwards;
+}
                     /**********************   LOGO STYLING *********************************/
 .logo{
     width: 140px;
@@ -81,7 +96,7 @@ svg .st1{
 .logo-text{
     color:#eaaa7f;
 }
-    /*********    animation       *******/
+    /*********    ANIMATION LOGO      *******/
 @keyframes grow{
     0%{
         transform: scale(0);
@@ -96,6 +111,24 @@ svg .st1{
 #Layer_1{
     animation: grow 1s ease-out backwards;
 }
+                   
+                   /*  LOGO ANIMATION ON HOVER    */
+@keyframes turn2{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(375deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logo:hover #Layer_1{
+    animation: turn2 1.7s ease-in-out backwards;
+}
+
+
 
                    /**********************   DOG IMAGES *********************************/
 .dogs{
