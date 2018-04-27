@@ -129,7 +129,7 @@ svg .st1{
 
 
                   /**********************   MEDIA QUERIES *********************************/
-
+                                /******         logo         ******/
 @media only screen and (min-width: 425px){
     .logo-text{
         display: none;
@@ -137,7 +137,28 @@ svg .st1{
     svg .st1{
     display: inline-block;
 }
-
+                              /********** ANIMATION LOGO ***********/
+    svg .st1{
+        transform-origin: 50% 50%;
+    }
+ @keyframes turn{
+    0%{
+        transform: rotate(0);
+        opacity: 0;
+    }
+    60%{
+        transform: rotate(375deg);
+    }
+    80%{
+        transform: rotate(355deg);
+    }
+    100%{ 
+        transform: rotate(360deg);
+    }
+      svg .st1{
+            animation: turn .5s ease-out .3s backwards;
+        }
+    
 }
 
 
