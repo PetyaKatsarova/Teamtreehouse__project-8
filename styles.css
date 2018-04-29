@@ -63,26 +63,16 @@ footer {
 }
 
                       /**********************   NAV STYLING *********************************/
+nav li{
+  transition: transform .1s ease-out;
+}
+nav li svg{
+  transform: scale(.8);
+}
+nav li:hover {
+  transform: scale(1.1);
+}
 
-.home svg, .location svg, .contact svg{
-    width: 15px;
-    height: 15px;
-}
-                    /*   NAV ANIMATION    */
-@keyframes rotate{
-    0%{
-        transform: scale(0);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100{
-        transform: scale(1);
-    }
-}
-nav li:hover svg{
-    animation: rotate .6s ease-out forwards;
-}
                     /**********************   LOGO STYLING *********************************/
 .logo{
     width: 140px;
@@ -96,7 +86,7 @@ svg .st1{
 .logo-text{
     color:#eaaa7f;
 }
-    /*********    ANIMATION LOGO      *******/
+    /*********    ANIMATION .LOGO    *******/
 @keyframes grow{
     0%{
         transform: scale(0);
@@ -108,41 +98,43 @@ svg .st1{
         transform: scale(.8);
     }
 }
-#Layer_1{
-    animation: grow 1s ease-out backwards;
+@keyframes turn{
+  0%{
+    transform: rotate(0) scale(0);
+  }
+  60%{
+    transform: rotate(355deg) scale(1.1);
+  }
+  80%{
+    transform: rotate(377deg) scale(1.2);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
 }
-                   
-                   /*  LOGO ANIMATION ON HOVER    */
-@keyframes turn2{
-    0%{
-        transform: rotate(0);
-    }
-    50%{
-        transform: rotate(375deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+.logo{
+  animation: grow 1.1s ease-in-out backwards;
 }
-.logo:hover #Layer_1{
-    animation: turn2 1.7s ease-in-out backwards;
+.logo:hover #Layer_1 {
+  animation: turn 1s ease-out backwards;
 }
-
-
 
                    /**********************   DOG IMAGES *********************************/
+
 .dogs{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: transform .3s ease-in;
+
 }
-.sable, .fawn, .red, .stone{
-    padding: 10px;
+.sable, .fawn, .red{
+  padding-right: 25px;
 }
 .sable{
     color: #b97f5b;
     fill:  #b97f5b;
-}
+    }
 .fawn{
     color: #e9aa82;
     fill: #e9aa82;
@@ -155,48 +147,16 @@ svg .st1{
     color: #52595f;
     fill:  #52595f;
 }
-
-
-
-
-
-
+.wrap-corgi:hover{
+  transform: rotateX(-30deg) scale(1.15);
+}
                   /**********************   MEDIA QUERIES *********************************/
-                                /******         logo         ******/
+
 @media only screen and (min-width: 425px){
     .logo-text{
         display: none;
     }
     svg .st1{
     display: inline-block;
+    }
 }
-                              /********** ANIMATION LOGO ***********/
-    svg .st1{
-        transform-origin: 50% 50%;
-    }
- @keyframes turn{
-    0%{
-        transform: rotate(0);
-        opacity: 0;
-    }
-    60%{
-        transform: rotate(375deg);
-    }
-    80%{
-        transform: rotate(355deg);
-    }
-    100%{ 
-        transform: rotate(360deg);
-    }
-      svg .st1{
-            animation: turn .5s ease-out .3s backwards;
-        }
-    
-}
-
-
-
-
-
-
-
