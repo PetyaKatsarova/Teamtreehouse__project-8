@@ -68,9 +68,12 @@ nav li{
 }
 nav li svg{
   transform: scale(.8);
-}
+  }
 nav li:hover {
   transform: scale(1.1);
+}
+.home:hover, .contact:hover, .location:hover{
+  color: grey;
 }
 
                     /**********************   LOGO STYLING *********************************/
@@ -125,7 +128,7 @@ svg .st1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    transition: transform .3s ease-in;
+    transition: transform .7s ease-in-out .3s;
 
 }
 .sable, .fawn, .red{
@@ -148,7 +151,7 @@ svg .st1{
     fill:  #52595f;
 }
 .wrap-corgi:hover{
-  transform: rotateX(-30deg) scale(1.15);
+  transform: rotateX(20deg) scale(1.15);
 }
                   /**********************   MEDIA QUERIES *********************************/
 
