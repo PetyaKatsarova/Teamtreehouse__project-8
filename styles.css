@@ -73,7 +73,7 @@ nav li:hover {
   transform: scale(1.1);
 }
 .home:hover, .contact:hover, .location:hover{
-  color: grey;
+  color: #b3cccc;
 }
 
                     /**********************   LOGO STYLING *********************************/
